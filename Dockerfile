@@ -13,7 +13,7 @@ RUN tar -zvxf apache-tomcat-9.0.71.tar.gz
 RUN pwd
 #RUN cd /tmp &amp;&amp; tar xvfz apache-tomcat-9.0.71.tar.gz
 RUN pwd
-RUN cp -Rv /tmp/apache-tomcat-9.0.71/* /usr/local/tomcat/
+RUN cp -Rv apache-tomcat-9.0.71/* /usr/local/tomcat/
 
 EXPOSE 8080
 # java
