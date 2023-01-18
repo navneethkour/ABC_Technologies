@@ -22,9 +22,12 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 # Define default command.
 CMD ["bash"]
 
+
+
 MAINTAINER bhaskarndas@gmail.com
 RUN cp -Rv /var/lib/jenkins/workspace/ABC_Technologies/target/ABCtechnologies-1.0.war /usr/local/tomcat/
-RUN ls -la /usr/local/tomcat/
+CMD ["pwd"]
+#RUN ls -la /usr/local/tomcat/
 WORKDIR /usr/local/tomcat/webapps
 #RUN curl -O -L https://github.com/bhaskarndas/sample-war/raw/main/sampletest.war
 
