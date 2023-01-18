@@ -24,9 +24,12 @@ CMD ["bash"]
 
 MAINTAINER bhaskarndas@gmail.com
 
+RUN cp /var/lib/jenkins/workspace/ABC_Technologies/target/ABCtechnologies-1.0.war /usr/local/tomcat/
+
+RUN ls -la /usr/local/tomcat/
 
 WORKDIR /usr/local/tomcat/webapps
-RUN curl -O -L https://github.com/bhaskarndas/sample-war/raw/main/sampletest.war
+#RUN curl -O -L https://github.com/bhaskarndas/sample-war/raw/main/sampletest.war
 
 
-CMD ["https://net.cloudinfrastructureservices.co.uk/usr/local/tomcat/bin/catalina.sh", "run"]
+#CMD ["https://net.cloudinfrastructureservices.co.uk/usr/local/tomcat/bin/catalina.sh", "run"]
