@@ -24,7 +24,7 @@ CMD ["bash"]
 
 MAINTAINER bhaskarndas@gmail.com
 
-RUN cp /var/lib/jenkins/workspace/ABC_Technologies/target/ABCtechnologies-1.0.war /usr/local/tomcat/
+COPY /var/lib/jenkins/workspace/ABC_Technologies/target/ABCtechnologies-1.0.war /usr/local/tomcat/
 
 RUN ls -la /usr/local/tomcat/
 
